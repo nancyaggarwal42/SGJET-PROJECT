@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+.scrl{
+    display: flex;
+    white-space: nowrap;
+    margin-top: 0;
+}
+.scrol{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    animation: scrol 4s linear infinite;
+}
+@keyframes scrol{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+        .scrol:hover{
+          animation-play-state: paused;
+        }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .float {
+      animation: float 2s ease-in-out infinite;
+    }
+    ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #111827, #1f2937); /* Deep gray tones */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #8b5cf6, #f59e0b); /* Indigo to amber glow */
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #a78bfa, #fbbf24); /* Lighter hover glow */
+}
+
+      </style>
+</head>
+<body class="overflow-x-hidden">
+   <div id="splash" class="bg-gradient-to-br from-indigo-800 to-purple-900 h-screen py-6 shadow-xl text-center justify-center flex items-center">
+    <header class="w-full">
+      <h1 class="text-3xl font-extrabold text-white glow-text mb-4">🌟 Welcome to Our Website 🌟</h1>
+      <a href="" class="text-6xl font-bold text-amber-600">SgJet</a>
+    </header>
+   </div>
+      <div id="main" class="hidden transition-opacity duration-1000">
+        <div class="nav bg-gradient-to-tr from-gray-900 to-gray-800 flex gap-12 items-right text-right justify-end mr-[5%] w-full">
+          <a class="text-2xl font-semibold hover:underline text-white  mt-[2%] mx-[2%]" href="#page1">About Us</a>
+          <a class="text-2xl font-semibold hover:underline text-white  mt-[2%] mx-[2%]" href="#products">Our Products</a>
+          <a class="text-2xl font-semibold hover:underline text-white  mt-[2%] mx-[2%]" href="#page3">Contact Us</a>
+        </div>
+    <div id="page1"><div class="page1 px-6 bg-black py-2 lg:py-28 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+       <div class="lg:w-1/2 fade-in-up">
+        <h2 class="text-4xl md:text-5xl text-amber-400 mb-4">Sgjet 🚀</h2>
+        <p class="text-xl md:text-2xl text-gray-300 mb-6 leading-relaxed">At SgJet, we specialize in high-quality extension cords built for safety, durability, and everyday convenience. Whether you're powering your home office, tackling a DIY project, or setting up for an event, we’ve got the right cord for every job. From heavy-duty outdoor cables to sleek indoor solutions, we make sure your connection is always secure.</p>
+        <a class="border-2 border-white inline-block px-6 py-3 bg-amber-500 hover:bg-amber-600 font-semibold rounded-lg shadow-lg transition-all duration-300" href="#page3">Let's Connect</a>
+       </div>
+       <div class="lg:w-1/2 flex justify-center">
+        <div class="w-64 h-64 bg-gradient-to-tr from-amber-400 to-pink-500 rounded-full shadow-2xl float flex items-center justify-center">
+            <span class="text-7xl">✨</span>
+        </div>
+       </div>
+    </div>
+    </div></div>
+    <div class="scrl w-full bg-gradient-to-tr from-gray-900 to-gray-800">
+        <div class="scrol w-full flex gap-8 hover:animation-paused">
+          <div class="buynow flex gap-4 w-full">
+            <a class="link text-5xl font-semibold w-full text-pink-400" href="#page3">🛒 Buy now</a>
+            <a class="link text-5xl font-semibold w-full text-pink-400" href="#page3">🛒 Buy now</a>
+            <a class="link text-5xl font-semibold w-full text-pink-400" href="#page3">🛒 Buy now</a>
+            <a class="link text-5xl font-semibold w-full text-pink-400" href="#page3">🛒 Buy now</a>
+          </div>
+      </div>
+    </div>
+      
+    <section id="products">
+      <div class="page2 px-6 py-20 lg-py-28 bg-black bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+       <div class="max-w-2xl mx-auto text-center fade-in-up">
+        <h2 class="text-center text-4xl md:text-5xl text-amber-400 font-bold mb-6 selection:text-amber-600">Our Products</h2>
+        <h6 class="max-width-2xl mx-auto text-1xl text-gray-300">Reliable, durable, safe, flexible, long-lasting, weatherproof, versatile, efficient, tangle-free, powerful.</h6>
+       </div>
+       <div class="mt-16 grid md:grid-cols-3 gap-10 max-w-6xl mx-auto fade-in-up">
+            <!-- Product 1 -->
+      <!-- <div class="bg-gray-800 hover:scale-105 transition-transform duration-500 rounded-2xl p-8 shadow-xl flex flex-col items-center text-center">
+        <div class="w-24 h-24 bg-gradient-to-tr from-pink-500 to-yellow-400 rounded-full flex items-center justify-center text-4xl mb-6 float">
+          <img class="rounded-full" src="https://m.media-amazon.com/images/I/41kTCrUXQQL.jpg" class="rounded-full cursor-pointer transition-all duration-300 ease-in-out"  onclick="this.classList.toggle('scale-[3]'); this.classList.toggle('rounded-none')" alt="https://m.media-amazon.com/images/I/41kTCrUXQQL.jpg">
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">Universal Socket 3 Switch Multi Plug Extension Board/Extension Cord</h3>
+        <p class="text-gray-400">
+          This universal extension board offers a smart solution for powering multiple devices simultaneously. It features three versatile sockets compatible with various plug types, along with individual switches for each outlet, giving you complete control and safety.
+        </p>
+      </div> -->
+      <div class="bg-gray-800 hover:scale-105 transition-transform duration-500 rounded-2xl p-8 shadow-xl flex flex-col items-center text-center">
+        <div class="w-24 h-24 bg-gradient-to-tr from-green-400 to-blue-500 rounded-full flex items-center justify-center text-4xl mb-6 float">
+          <img class="rounded-full" src="https://www.jiomart.com/images/product/original/rvrosum0hb/sgjet-sgjet-1-socket-16a-3-universal-socket-6a-push-button-extension-cord-4-socket-extension-boards-white-2-m-product-images-orvrosum0hb-p610967558-0-202502031241.jpg?im=Resize=(420,420)" class="rounded-full cursor-pointer transition-all duration-300 ease-in-out"  onclick="this.classList.toggle('scale-[3]'); this.classList.toggle('rounded-none')" alt="https://www.jiomart.com/images/product/original/rvrosum0hb/sgjet-sgjet-1-socket-16a-3-universal-socket-6a-push-button-extension-cord-4-socket-extension-boards-white-2-m-product-images-orvrosum0hb-p610967558-0-202502031241.jpg?im=Resize=(420,420)">
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-1">Extension Cords</h3>
+        <p class="text-xl text-gray-100 leading-relaxed mb-2">Power-packed, space-saving, stylish, smart, safe, reliable, tangle-free, durable, must-have!</p>
+        <a class="text-xl font-bold text-gray-200 border-2 border-white px-4 py-2" href="extension.html">Explore</a>
+      </div>
+
+      <!-- Product 2 -->
+      <!-- <div class="bg-gray-800 hover:scale-105 transition-transform duration-500 rounded-2xl p-8 shadow-xl flex flex-col items-center text-center">
+        <div class="w-24 h-24 bg-gradient-to-tr from-green-400 to-blue-500 rounded-full flex items-center justify-center text-4xl mb-6 float">
+          <img class="rounded-full" src="https://www.jiomart.com/images/product/original/rvrosum0hb/sgjet-sgjet-1-socket-16a-3-universal-socket-6a-push-button-extension-cord-4-socket-extension-boards-white-2-m-product-images-orvrosum0hb-p610967558-0-202502031241.jpg?im=Resize=(420,420)" class="rounded-full cursor-pointer transition-all duration-300 ease-in-out"  onclick="this.classList.toggle('scale-[3]'); this.classList.toggle('rounded-none')" alt="https://www.jiomart.com/images/product/original/rvrosum0hb/sgjet-sgjet-1-socket-16a-3-universal-socket-6a-push-button-extension-cord-4-socket-extension-boards-white-2-m-product-images-orvrosum0hb-p610967558-0-202502031241.jpg?im=Resize=(420,420)">
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">Socket 16A 3 Universal Socket 6A Push Button Extension Cord 4 Socket Extension Boards</h3>
+        <p class="text-gray-400">
+          This 4-socket extension board is designed for both versatility and power. It features one 16A socket for heavy-duty appliances and three universal 6A sockets, making it perfect for everyday electronics. Each socket includes individual push-button switches for enhanced safety and energy efficiency.
+        </p>
+      </div> -->
+      <div class="bg-gray-800 hover:scale-105 transition-transform duration-500 rounded-2xl p-8 shadow-xl flex flex-col items-center text-center">
+        <div class="w-24 h-24 bg-gradient-to-tr from-green-400 to-blue-500 rounded-full flex items-center justify-center text-4xl mb-6 float">
+          <img class="rounded-full" src="https://images.meesho.com/images/products/471730695/euh4d_400.webp" class="rounded-full cursor-pointer transition-all duration-300 ease-in-out"  onclick="this.classList.toggle('scale-[3]'); this.classList.toggle('rounded-none')" alt="https://images.meesho.com/images/products/471730695/euh4d_400.webp">
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-1">Qlex Soap Dish</h3>
+        <p class="text-xl text-gray-100 leading-relaxed mb-2">Sleek, hygienic, non-slip, stylish, compact, smart-drain, durable, modern, tidy, essential!</p>
+        <a class="text-xl font-bold text-gray-200 border-2 border-white px-4 py-2" href="product2.html">Explore</a>
+        
+      </div>
+
+      <!-- product3 -->
+      <div class="bg-gray-800 hover:scale-105 transition-transform duration-500 rounded-2xl p-8 shadow-xl flex flex-col items-center text-center">
+        <div class="w-24 h-24 bg-gradient-to-tr from-green-400 to-blue-500 rounded-full flex items-center justify-center text-4xl mb-6 float">
+          <img class="rounded-full" src="https://images.meesho.com/images/products/442428303/9j0it_400.webp" class="rounded-full cursor-pointer transition-all duration-300 ease-in-out"  onclick="this.classList.toggle('scale-[3]'); this.classList.toggle('rounded-none')" alt="https://images.meesho.com/images/products/442428303/9j0it_400.webp">
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-1">Mobile Holders</h3>
+        <p class="text-xl text-gray-100 leading-relaxed mb-2">Stable, adjustable, sleek, hands-free, compact, sturdy, stylish, versatile, durable, must-have!</p>
+        <a class="text-xl font-bold text-gray-200 border-2 border-white px-4 py-2" href="product3.html">Explore</a>
+       
+      </div>
+    </div>
+    </div>
+   </section>
+      <!-- CONTACT US -->
+  <div id="page3" class="px-10 py-20 lg:py-28 bg-gradient-to-br from-gray-900 to-gray-800">
+    <div class="max-w-4xl mx-auto text-center fade-in-up">
+      <h2 class="text-4xl md:text-5xl font-bold text-amber-400 mb-4 selection:text-amber-600">Contact Us ☎️</h2>
+      <p class="text-lg text-gray-300 mb-10">
+        We're here to help you! Reach out via call, email, or find our products online.
+      </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8 text-center fade-in-up">
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">📞 Call Us</h3>
+        <p class="text-gray-300 text-lg">985632147412</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">✉️ Email Us</h3>
+        <p class="text-gray-300 text-lg">support@yourbrand.com</p>
+      </div>
+    </div>
+
+    <!-- Online Store Links -->
+    <div class="mt-16 flex flex-wrap justify-center gap-6 fade-in-up">
+      <a href="https://www.amazon.in/your-product" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
+        🛒 Buy on Amazon
+      </a>
+      <a href="https://www.flipkart.com/your-product" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
+        📦 Shop on Flipkart
+      </a>
+      <a href="https://www.meesho.com/your-product" target="_blank" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
+        👜 Explore on Meesho
+      </a>
+    </div>
+  </div>
+</div>
+  <script>
+    // Wait 2.5 seconds, then hide splash and show main
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('splash').classList.add('hidden');
+        document.getElementById('main').classList.remove('hidden');
+      }, 2500); // 2500ms = 2.5 seconds
+    });
+   
+  document.querySelectorAll("details").forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      document.querySelectorAll("details").forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="sgjet"></script>
+</body>
+</html>
